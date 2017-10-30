@@ -8,6 +8,8 @@ sess = tf.Session()
 # print(c)
 x = 'C:/Users/mirac/Desktop/Dev/OCR_PROJECT/src/Text_Detection/checkpoints/trained.meta'
 y = 'C:/Users/mirac/Desktop/Dev/OCR_PROJECT/src/Text_Detection/checkpoints/./'
+z = 'checkpoints/trained.meta' # FOR LINUX
+t = 'checkpoints/./' # FOR LINUX
 saver = tf.train.import_meta_graph(x)
 saver.restore(sess,tf.train.latest_checkpoint(y))
 

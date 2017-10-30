@@ -30,12 +30,12 @@ def sliding_windows(image, stepSize, windowSize):
             # yield the current window
             yield (x, y, image[y:y + windowSize[1], x:x + windowSize[0]])
 
-image = cv2.imread('PreProcessed_Images/aokay.jpg')
+image = cv2.imread('PreProcessed_Images/bokay.jpg')
 newimg = np.zeros(shape=(1060,750,3))
 def start():
     for resized in pyramid(image, scale=1):
         # loop over the sliding window for each layer of the pyramid
-        for (x, y, window) in sliding_windows(resized, stepSize=16, windowSize=(winW, winH)):
+        for (x, y, window) in sliding_windows(resized, stepSize=4, windowSize=(winW, winH)):
             # if the window does not meet our desired window size, ignore it
             if window.shape[0] != winH or window.shape[1] != winW:
                 continue
@@ -63,7 +63,7 @@ def start():
             cv2.imshow("Window", clone)
             cv2.waitKey(1)
         break
-start()
+
 def edit(blue_print):
     for x in range(1060):
         for y in range(750):
@@ -80,11 +80,11 @@ def edit(blue_print):
 
     cv2.imwrite("utils/done.jpg", blue_print)
     return blue_print
-
-newimg = cv2.imread('utils/done.jpg')
+start()
 
 blue_print = edit(newimg)
 
 realim = detect_text(blueprint=blue_print, realim=image)
-cv2.imshow('window', realim)
-cv2.waitKey(1000)
+cv2.imwrite('finalimg.jpg', realim)
+# cv2.imshow('window', realim)
+# cv2.waitKey(1000)

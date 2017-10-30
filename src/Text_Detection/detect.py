@@ -1,7 +1,7 @@
 # import the necessary packages
 import cv2
-
-
+import math
+print(math.fabs(-3))
 def detect_text(realim, blueprint):
     img = blueprint
 
@@ -36,7 +36,10 @@ def detect_text(realim, blueprint):
                         s+=1
                         if 255 not in img[coor1:coor2, s, :]:
                             coor4=s
-                            coordlist.append([coor1,coor2,coor3,coor4])
+                            if int(math.fabs(coor1-coor2)) / int(math.fabs(coor3-coor4)) > 5:
+                                break
+                            else:
+                                coordlist.append([coor1,coor2,coor3,coor4])
                             break
             s=-1
 

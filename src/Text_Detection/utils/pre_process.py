@@ -62,4 +62,4 @@ def zero_mean(*args, **kwargs):
         retlist.append(arr)
     return retlist
 
-#process_new_img(imagePath='ssss-1.jpg', destPath='a', name='okay.jpg')
+process_new_img(imagePath='prosesfisi-1.jpg', destPath='b', name='okay.jpg')
