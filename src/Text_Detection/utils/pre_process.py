@@ -3,7 +3,8 @@ import numpy as np
 import imutils
 import string
 
-def process_new_img(imagePath:string, destPath:string, name:string, widht=750, gscaled=False):
+
+def process_new_img(imagePath: string, destPath: string, name: string, widht=750, gscaled=False):
     image = cv2.imread(imagePath)  # Read image
     #  print(type(image))
     if image is None:
@@ -62,4 +63,5 @@ def zero_mean(*args, **kwargs):
         retlist.append(arr)
     return retlist
 
-process_new_img(imagePath='prosesfisi-1.jpg', destPath='b', name='okay.jpg')
+
+process_new_img(imagePath='../Original_Images/IMG_0756.JPG', destPath='third', name='.jpg')
