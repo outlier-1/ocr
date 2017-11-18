@@ -2,25 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38c93c8b-74f0-4f1b-82d7-a7e6afd44a17" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Character_Recognition/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Character_Recognition/main.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Character_Segmentation/Segmentation.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Text_Detection/Detection.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/utils/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/utils/dataset.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/utils/pre_process.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/utils/utils.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Character_Segmentation/main.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Text_Detection/detect.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Text_Detection/retrieve_image_patches.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/logs/testlogs/last/events.out.tfevents.1508484847.outlier" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Text_Detection/classifier.py" afterPath="$PROJECT_DIR$/src/Text_Detection/Detection_Classifier.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/mirac.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/mirac.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Character_Segmentation/binarizeImage.m" afterPath="$PROJECT_DIR$/src/Character_Segmentation/binarizeImage.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Text_Detection/utils/pre_process.py" afterPath="$PROJECT_DIR$/src/Text_Detection/utils/pre_process.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Text_Detection/utils/utils.py" afterPath="$PROJECT_DIR$/src/Text_Detection/utils/utils.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Text_Detection/utils/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Text_Detection/utils/dataset.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Text_Detection/utils/pre_process.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Text_Detection/utils/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/first.jpg" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,8 +20,8 @@
       <file leaf-file-name="Segmentation.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Character_Segmentation/Segmentation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="63" column="10" lean-forward="true" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="10" />
+            <state relative-caret-position="204">
+              <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -131,24 +117,6 @@
               <item name="OCR_PROJECT" type="b2602c69:ProjectViewProjectNode" />
               <item name="OCR_PROJECT" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OCR_PROJECT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OCR_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Character_Recognition" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OCR_PROJECT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OCR_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Character_Segmentation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OCR_PROJECT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OCR_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Text_Detection" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -295,8 +263,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34114978" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34114978" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24764891" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -624,8 +593,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Character_Segmentation/Segmentation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="63" column="10" lean-forward="true" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="10" />
+        <state relative-caret-position="204">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
