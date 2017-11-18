@@ -1,12 +1,9 @@
 import cv2
 import numpy as np
 import imutils
-import string
 
 
-def process_new_img(imagePath: string, destPath: string, name: string, widht=750, gscaled=False):
-    image = cv2.imread(imagePath)  # Read image
-    #  print(type(image))
+def process_new_img(image, widht=750, gscaled=False):
     if image is None:
         print("Could not found the image. Check the imagePath again. ")
         return None
@@ -14,7 +11,6 @@ def process_new_img(imagePath: string, destPath: string, name: string, widht=750
         if gscaled:
             image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)  # Convert To Gray-Scale
         processed = imutils.resize(image, width=widht, inter=cv2.INTER_AREA)  # Resize
-        cv2.imwrite(destPath + name, processed)  # Write Image
         return processed
 
 
@@ -62,6 +58,3 @@ def zero_mean(*args, **kwargs):
 
         retlist.append(arr)
     return retlist
-
-
-# process_new_img(imagePath='../Original_Images/IMG_0756.JPG', destPath='third', name='.jpg')
